@@ -1,0 +1,30 @@
+{
+  "name": "json-to-flow",
+  "version": "1.0.0",
+  "description": "Transform JSON into flow type annotations automatically",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnydays/json-to-flow.git"
+  },
+  "keywords": [
+    "json",
+    "flow",
+    "flowtype",
+    "node",
+    "nodejs"
+  ],
+  "author": "Johnydays",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/johnydays/json-to-flow/issues"
+  },
+  "homepage": "https://github.com/johnydays/json-to-flow#readme",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "oboe": "^2.1.2"
+  }
+}
