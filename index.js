@@ -2,11 +2,17 @@
 
 const fs = require('fs')
 const oboe = require('oboe')
+const program = require('commander')
+
+program
+  .option('-t, --tabs', 'Use tabs instead of spaces')
+  .option('-s, --space-amount <n>', 'How many spaces to use for indentation', noop => noop, 2)
+  .parse(process.argv)
 
 let inputJson
-if (process.argv[2]) {
-  inputJson = fs.readFileSync(process.argv[2])
-  doIt(inputObject)
+if (program.args[0]) {
+  inputJson = fs.readFileSync(program.args[0])
+  doIt(JSON.parse(inputJson))
 }
 else {
   const stdin = process.stdin
@@ -28,8 +34,8 @@ function arrayToType (array, indentationLevel) {
 
 function generateIndentation (amount) {
   let indentation = ""
-  for (let i = 0; i < amount * 2; i++) {
-    indentation += " "
+  for (let i = 0; i < (program.tabs ? amount : amount * program.spaceAmount); i++) {
+    indentation += (program.tabs ? "\t" : " ")
   }
   return indentation
 }
