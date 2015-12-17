@@ -1,5 +1,5 @@
 {
-  "name": "json-to-flow",
+  "name": "json-flow",
   "version": "1.0.0",
   "description": "Transform JSON into flow type annotations automatically",
   "main": "index.js",
