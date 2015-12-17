@@ -2,9 +2,9 @@
 
 Turns JSON payloads into simple flow type annotations
 
-Install: `npm install -g json-to-flow`
+Install: `npm install -g json-flow`
 
-Use: `json-to-flow $JSON_FILENAME`
+Use: `json-flow $JSON_FILENAME`
 
 ```
 
@@ -17,7 +17,7 @@ Options:
 ```
 Also accepts input from stdin if that tickles your fancy, such as:
 ```
-curl -s https://api.github.com/users/johnydays/repos | json-to-flow
+curl -s https://api.github.com/users/johnydays/repos | json-flow
 ```
 
 Example output
