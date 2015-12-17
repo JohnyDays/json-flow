@@ -9,10 +9,11 @@
   "bin": "./index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/johnydays/json-to-flow.git"
+    "url": "git+https://github.com/johnydays/json-flow.git"
   },
   "keywords": [
     "json",
+    "json-to-flow",
     "flow",
     "flowtype",
     "node",
@@ -21,7 +22,7 @@
   "author": "Johnydays",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/johnydays/json-to-flow/issues"
+    "url": "https://github.com/johnydays/json-flow/issues"
   },
   "homepage": "https://github.com/johnydays/json-to-flow#readme",
   "dependencies": {
