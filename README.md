@@ -15,13 +15,40 @@ Options:
   -s, --space-amount <n>  How many spaces to use for indentation
 
 ```
-Also accepts input from stdin if that tickles your fancy, such as:
+
+Running it on this repo's package.json: `json-flow package.json`
 ```
-curl -s https://api.github.com/users/johnydays/repos | json-flow
+{
+  name: string,
+  version: string,
+  description: string,
+  main: string,
+  scripts: {
+    test: string,
+  },
+  bin: string,
+  repository: {
+    type: string,
+    url: string,
+  },
+  keywords: string[],
+  author: string,
+  license: string,
+  bugs: {
+    url: string,
+  },
+  homepage: string,
+  dependencies: {
+    commander: string,
+    oboe: string,
+  },
+}
 ```
 
-Example output
+Also accepts input from stdin if that tickles your fancy, such as:
 ```javascript
+curl -s https://api.github.com/users/johnydays/repos | json-flow
+
 {
   id: number,
   name: string,
