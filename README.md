@@ -4,6 +4,8 @@ Turns JSON payloads into simple flow type annotations
 
 Install: `npm install -g json-flow`
 
+(Needs node with some ES6 support, tested with `5.2.0`)
+
 Use: `json-flow $JSON_FILENAME`
 
 ```
