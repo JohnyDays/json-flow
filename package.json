@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "bin": "./index.js",
+  "bin": "./bin.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/johnydays/json-flow.git"
